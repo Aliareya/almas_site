@@ -3,7 +3,7 @@ import { Icon } from "@iconify-icon/react";
 import { useSite } from "../../context/SiteContext";
 
 function TopHeader() {
-  const {sitedata} = useSite();
+  const {sitedata ,socialsLinks} = useSite();
   return (
     <div className="w-full flex flex-row-reverse justify-between h-10 bg-red-950 px-17.5 items-center">
       <div className="flex items-center">
@@ -20,7 +20,7 @@ function TopHeader() {
 
       <div className="flex items-center gap-2">
         {/* WhatsApp */}
-        {sitedata?.socials.map((item , index)=>{
+        {socialsLinks?.map((item , index)=>{
           return(
             <a
               key={index}
