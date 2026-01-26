@@ -1,20 +1,17 @@
-import React from 'react'
+'use client';
 
-function Menu_item() {
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+
+function Menu_item({item}) {
+  const pathname = usePathname();
   return (
-   <>
-    <li className='cursor-pointer hover:text-[#460809] text-base font-semibold font-[fantasy] list-none'>خانه</li>
-    <li className='text-base font-bold font-[fantasy] list-none'>فروشگاه</li>
-    <li className='text-base font-bold font-[fantasy] list-none'>لباس مجلسی</li>
-    <li className='text-base font-semibold font-[fantasy] list-none'>درباره ما</li>
-    <li className='text-base font-semibold font-[fantasy] list-none'>تماس با ما</li>
-   </>
-  )
+    <Link href={item?.path}
+      className={`${pathname === item.path ? "text-[#ec952b]":""} cursor-pointer  hover:text-[#945f1e] text-base font-semibold font-[fantasy] list-none`}>
+      {item.title}
+    </Link>
+  );
 }
 
-export default Menu_item
-
-
-
-
-
+export default Menu_item;

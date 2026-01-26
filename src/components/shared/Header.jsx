@@ -6,7 +6,7 @@ import Menu from './Menu';
 import { Icon } from '@iconify-icon/react';
 
 function Header() {
-  const {sitelogo ,sitedata} = useSite();
+  const {sitelogo ,sitedata , iconMenu} = useSite();
 
   return (
     <div className='w-full h-20 bg-white px-16 flex items-center sticky top-0'>
@@ -17,7 +17,7 @@ function Header() {
        <Menu/>
       </div>
       <div className='w-1/4 flex gap-3 justify-end items-center'>
-      {sitedata?.socials.map((items , index)=>{
+      {iconMenu?.map((items , index)=>{
         return(
           <Icon key={index} icon={items.icon} width="20" height="20"  style={{color: "#364153"}} />
         )

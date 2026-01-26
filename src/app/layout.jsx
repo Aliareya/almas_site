@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "../components/shared/Header";
 import TopHeader from "../components/shared/TopHeader";
+import Footer from "../components/shared/Footer";
 import { SiteProvider } from "../context/SiteContext";
 
 export const metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({children}) {
           <Header />
           <div className="w-full h-80 bg-gray-100"></div>
           {children}
+          <Footer/>
         </SiteProvider>
       </body>
     </html>
