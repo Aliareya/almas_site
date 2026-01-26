@@ -2,7 +2,7 @@ export const siteData = {
   name: "پوشاک الماس",
   description: "فروشگاه آنلاین پوشاک زنانه و مردانه با کیفیت عالی",
   phone: "09123456789",
-  address: "کابل، سرای شهراده، طبقه ۵، دوکان ۴۵۶",
+  address: "کابل، سرای شهراده، طبقه 5، دوکان 456",
   socials: [
     { path: 'https://instagram.com/almas', icon: 'jam:instagram' },
     { path: 'https://www.facebook.com/yourpage', icon: 'grommet-icons:facebook' },

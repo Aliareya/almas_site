@@ -8,7 +8,7 @@ function TopHeader() {
     <div className="w-full flex flex-row-reverse justify-between h-10 bg-red-950 px-17.5 items-center">
       <div className="flex items-center">
         <p className="mt-0.5 mr-2 text-white text-sm">
-          کابل، سرای شهراده، طبقه ۵، دوکان نمبر ۴۵۶
+         {sitedata?.address}
         </p>
         <span className="text-white font-semibold text-sm">: آدرس</span>
       </div>

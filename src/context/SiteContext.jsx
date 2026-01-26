@@ -8,6 +8,7 @@ import { siteData } from "../data/SiteData";
 const SiteContext = createContext();
 
 const data = {
+  sitelogo : logo,
   sitedata : siteData
 }
 
