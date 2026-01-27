@@ -3,14 +3,14 @@ const menu = [
    { title: "فروشگاه", path: "/shop" },
    { title: "لباس مجلسی", path: "/shop" },
    { title: "درباره ما", path: "/about" },
-   { title: "تماس باما", path: "/contact" },
+   { title: "تماس باما", path: "/contact" }
 ];
 
 const iconMenu = [
-   {icon : "lineicons:cart-1" , path : '/cart'},
+   {icon : "lineicons:cart-1" , path : '/cart'}, 
    {icon : "bitcoin-icons:search-filled" , path : '/serach'},
    {icon : "iconamoon:heart-light" , path : '/wishlist'},
-   {icon : "iconamoon:profile-circle-light" , path : '/profile'},
+   // {icon : "iconamoon:profile-circle-light" , path : '/profile'},
 ]
 
 const companypages = [

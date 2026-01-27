@@ -3,6 +3,7 @@ import Header from "../components/shared/Header";
 import TopHeader from "../components/shared/TopHeader";
 import Footer from "../components/shared/Footer";
 import { SiteProvider } from "../context/SiteContext";
+import {AuthProvider} from "../context/AuthContext"
 
 export const metadata = {
   title: "Almas",
@@ -14,11 +15,13 @@ export default function RootLayout({children}) {
     <html lang="en">
       <body className="bg-white">
         <SiteProvider>
+          <AuthProvider>
           <TopHeader />
           <Header />
           <div className="w-full h-80 bg-gray-100"></div>
           {children}
           <Footer/>
+          </AuthProvider>
         </SiteProvider>
       </body>
     </html>
