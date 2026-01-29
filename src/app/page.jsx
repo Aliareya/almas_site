@@ -1,8 +1,13 @@
-import HeroSection from "../components/section/home/HeroSection"
-export default function Home() {
+import { url } from 'inspector';
+import React from 'react';
+import img from "../../public/images/hero.png"
+import Home from "../app/home/Home"
+
+
+function page() {
   return (
-    <div className="w-full h-screen bg-amber-900">
-      <HeroSection/>
-    </div>
-  );
+    <Home/>
+  )
 }
+
+export default page

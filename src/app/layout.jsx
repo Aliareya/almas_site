@@ -18,7 +18,7 @@ export default function RootLayout({children}) {
           <AuthProvider>
           <TopHeader />
           <Header />
-          <div className="w-full h-80 bg-gray-100"></div>
+          {/* <div className="w-full h-80 bg-gray-100"></div> */}
           {children}
           <Footer/>
           </AuthProvider>
