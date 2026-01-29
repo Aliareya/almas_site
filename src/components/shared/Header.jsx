@@ -13,7 +13,7 @@ function Header() {
   const {islogin} = useAuth();
 
   const [isMobile, setIsMobile] = useState(false);
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const checkScreen = () => {
@@ -33,7 +33,7 @@ function Header() {
   return (
     <header className="w-full bg-white sticky top-0 z-50 shadow-sm">
       {/* Top bar */}
-      <div className="h-20 max-sm:h-14 px-3 md:px-5 lg:px-16 flex items-center justify-between">
+      <div className="h-20 max-sm:h-14 px-3 md:px-5 lg:px-16 flex  items-center justify-between">
         
         {/* Logo */}
         <div className="flex items-center">
