@@ -1,7 +1,7 @@
 'use client';
 import { motion } from "framer-motion";
 import bg from "../../../../public/images/bg.jpg";
-import bg1 from "../../../../public/images/hero.png";
+import bg1 from "../../../../public/images/G.png";
 
 export default function HeroSection() {
   return (
@@ -17,7 +17,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-white/60" />
 
       {/* 🔹 Content */}
-      <div className="relative z-10 flex md:flex-row flex-row max-md:flex-col-reverse max-sm:flex-col-reverse md:gap-5 lg:gap-10 max-sm:gap-3">
+      <div className="relative z-10 flex md:flex-row flex-row max-md:flex-col-reverse max-sm:flex-col-reverse md:gap-1 lg:gap-10 max-sm:gap-3">
         
         {/* Images */}
         <div className="md:w-1/2 max-sm:w-full max-md:w-[80%] bg-center bg-cover  h-auto flex max-md:flex-row md:flex-row flex-row-reverse gap-3 items-end-safe"
