@@ -1,14 +1,12 @@
 'use client';
 import { motion } from "framer-motion";
-import Bigimgcard from "../../imgcard/Bigimgcard";
-import MediumimgCard from "../../imgcard/MediumimgCard";
-import SmallimgCard from "../../imgcard/SmallimgCard";
 import bg from "../../../../public/images/bg.jpg";
+import bg1 from "../../../../public/images/hero.png";
 
 export default function HeroSection() {
   return (
 
-    <div className="relative w-full h-auto lg:px-16 max-sm:px-3 md:px-5 max-md:px-5 py-10 mb-5 overflow-hidden">
+    <div className="relative w-full h-auto lg:px-15.5 max-sm:px-3 md:px-5 max-md:px-5 py-10 mb-5 overflow-hidden">
 
     <div
         className="absolute inset-0 bg-cover bg-center scale-110 blur-md"
@@ -19,21 +17,12 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-white/60" />
 
       {/* 🔹 Content */}
-      <div className="relative z-10 flex md:flex-row flex-row max-md:flex-col-reverse max-sm:flex-col-reverse   gap-10">
+      <div className="relative z-10 flex md:flex-row flex-row max-md:flex-col-reverse max-sm:flex-col-reverse md:gap-5 lg:gap-10 max-sm:gap-3">
         
         {/* Images */}
-        <div className="md:w-1/2 max-sm:w-full max-md:w-[80%]  h-auto flex max-md:flex-row md:flex-row flex-row-reverse gap-3 items-end-safe">
-          <div className="w-53 flex flex-col gap-3">
-            <Bigimgcard />
-            <Bigimgcard />
-          </div>
-          <div className="w-53 flex flex-col gap-3">
-            <SmallimgCard />
-            <SmallimgCard />
-          </div>
-          <div className="w-53 flex flex-col">
-            <MediumimgCard />
-          </div>
+        <div className="md:w-1/2 max-sm:w-full max-md:w-[80%] bg-center bg-cover  h-auto flex max-md:flex-row md:flex-row flex-row-reverse gap-3 items-end-safe"
+        >
+          <img src={bg1.src} alt="" className="w-full h-full" />
         </div>
 
         {/* Text */}
@@ -77,7 +66,7 @@ export default function HeroSection() {
           >
             <div className="flex gap-4">
   {/* Primary Button */}
-  <button className="relative px-8 py-3 rounded-full font-medium text-white
+  <button className="relative px-8 max-sm:px-5 max-sm:py-2 py-3 rounded-full font-medium text-white
     bg-linear-to-r from-red-950 to-red-900/80
     shadow-md shadow-red-900/80
     hover:shadow-lg hover:shadow-red-900/40
