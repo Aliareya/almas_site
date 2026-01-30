@@ -7,6 +7,7 @@ import { Icon } from "@iconify-icon/react";
 import { useState, useEffect } from "react";
 import Button from "../ui/Button"
 import { useAuth } from "../../context/AuthContext";
+import Link from "next/link";
 
 function Header() {
   const { sitelogo, iconMenu } = useSite();
@@ -43,7 +44,11 @@ function Header() {
         {/* Desktop Menu */}
         <div className="md:flex sm:hidden max-md:hidden gap-8">
           <Menu />
-          {!islogin && <Button/>}
+          {!islogin && (
+            <Link href={"/login"} className={`px-4 py-1 max-sm:w-full  max-sm:py-1.5 rounded-md bg-[#ec952b] cursor-pointer text-white  hover:text-[#945f1e] text-base font-semibold font-[fantasy] list-none`}> 
+             ورود
+          </Link>
+          )}
           
         </div>
 
@@ -90,7 +95,11 @@ function Header() {
       >
         <div className="bg-white flex flex-col gap-3 py-3 rounded-b-md border-b-2 border-red-950 items-end px-3 border-t shadow-md">
           <Menu />
-          {!islogin && <Button/>}
+          {!islogin && (
+            <Link href={"/login"} className={`px-4 py-1 max-sm:w-full  max-sm:py-1.5 rounded-md bg-[#ec952b] cursor-pointer text-white  hover:text-[#945f1e] text-base font-semibold font-[fantasy] list-none`}> 
+             ورود
+          </Link>
+          )}
         </div>
       </div>
     </header>
